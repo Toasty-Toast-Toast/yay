@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="BYatCBLnd?#tp8RDnFU2">Player</variable><variable type="KIND_SpriteKind" id="_6C5c5OmeB1pJOJ.OrUw">Projectile</variable><variable type="KIND_SpriteKind" id="IJq0^{C}j^D|Wsh47n=D">Food</variable><variable type="KIND_SpriteKind" id="?+XtQ%0!g0l#gTSI/7Wf">Enemy</variable><variable id="`)H#GS$T95-DgO;?%V.z">mySprite</variable><variable id="?`gH(z%-SW[2+^|J7-~H">mySprite2</variable></variables><block type="pxt-on-start" id="$x#?_8!G+H/Df;l{Lw4=" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="Sm?]wgJj`{Q2hYV#8tgf"><field name="VAR" id="`)H#GS$T95-DgO;?%V.z">mySprite</field><value name="VALUE"><shadow type="math_number" id="1.+.*W/QGhYPsXXAoHx8"><field name="NUM">0</field></shadow><block type="spritescreate" id="6dF.Mj/K(E;D3BAS/f4O"><value name="img"><shadow type="screen_image_picker" id="DEBkG}h;b+-?4vnJA/^`"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . 7 7 7 7 7 7 7 7 . . . . 
+. . . . 7 . . . . . . 7 . . . . 
+. . . . 7 . . . . . . 7 . . . . 
+. . . . 7 . . . . . . 7 . . . . 
+. . . . 7 . . . . . . 7 . . . . 
+. . . . 7 . . . . . . 7 . . . . 
+. . . . 7 . . . . . . 7 . . . . 
+. . . . 7 7 7 7 7 7 7 7 . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":null}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="R*f`qzUK|[/139:Npq@("><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="aOfErbjLL+o:^4HLjrm:"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id=")usM@]NiFy9^.fA^y+7;"><field name="VAR" id="`)H#GS$T95-DgO;?%V.z">mySprite</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="T[T`:{)U?`?fZq3Dt91i"><field name="speed">100</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="[_/R}KisUOZST5~]-Npk"><field name="speed">100</field></shadow></value><next><block type="spritesetsetstayinscreen" id="daxQVkD8n,QqRz(%*u9m"><value name="sprite"><block type="variables_get" id="_y]i@HK$ITphETK{fhoV"><field name="VAR" id="`)H#GS$T95-DgO;?%V.z">mySprite</field></block></value><value name="on"><shadow type="toggleOnOff" id="s94d6.r*v6b@;VYz1|KG"><field name="on">true</field></shadow></value><next><block type="variables_set" id="pVGmC3z~,#}?%#p~?~im"><field name="VAR" id="?`gH(z%-SW[2+^|J7-~H">mySprite2</field><value name="VALUE"><shadow type="math_number" id="YsC$E;zW+oyTg8(-en3/"><field name="NUM">0</field></shadow><block type="spritescreate" id="Y~PgX/Rsh52OwLMpNDXL"><value name="img"><shadow type="screen_image_picker" id="j}3P|=6)!B8g7v8|F_IC"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . 2 2 2 2 2 2 2 2 . . . . 
+. . . . 2 . . . . . . 2 . . . . 
+. . . . 2 . . . . . . 2 . . . . 
+. . . . 2 . . . . . . 2 . . . . 
+. . . . 2 . . . . . . 2 . . . . 
+. . . . 2 . . . . . . 2 . . . . 
+. . . . 2 . . . . . . 2 . . . . 
+. . . . 2 2 2 2 2 2 2 2 . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":null}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="(ye9Jz0GEqYN)#AyNV^9"><field name="MEMBER">Enemy</field></shadow></value></block></value><next><block type="spritesetsetstayinscreen" id="eUM~k*a2nZeO1se:BjG3"><value name="sprite"><block type="variables_get" id=",_2B?Rbj6~PUiXTop}/}"><field name="VAR" id="`)H#GS$T95-DgO;?%V.z">mySprite</field></block></value><value name="on"><shadow type="toggleOnOff" id="RV$Gq@ZaufFtK7D|dJkm"><field name="on">true</field></shadow></value></block></next></block></next></block></next></block></next></block></statement></block></xml>
